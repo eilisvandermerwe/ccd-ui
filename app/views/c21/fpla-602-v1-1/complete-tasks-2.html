@@ -1,0 +1,81 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Create an order</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <h3 class="govuk-heading-m">Create an order</h3>
+
+
+              <form method="post" class="form">
+
+                <div class="govuk-inset-text" style="font-size: 16px;">
+                  There is only 1 application currently open.
+                </div>
+
+                <p>Is this related?</p>
+
+                  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+
+                      <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+
+                        <!-- No -->
+
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="how-contacted-conditional-no" name="serve-application-and-documents-status" type="radio" value="Incomplete" data-aria-controls="yes-address" >
+                          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                            Yes
+                          </label>
+                        </div>
+
+                        <div class="govuk-radios__item">
+                          <input class="govuk-radios__input" id="serve-application-and-documents-yes" name="serve-application-and-documents-status" type="radio" value="Complete" data-aria-controls="serve-application-yes" {{ checked("serve-application-and-documents-status", "Complete") }}>
+                          <label class="govuk-label govuk-radios__label" for="serve-application-and-documents-yes">
+                            No
+                          </label>
+                        </div>
+
+                      </div>
+                    </fieldset>
+
+
+
+                <br><br>
+                <button class="govuk-button govuk-button--secondary">Previous</button>
+                <a href="complete-tasks-3" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+                <p><a href="">Cancel</a></p>
+
+
+
+            </form>
+
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

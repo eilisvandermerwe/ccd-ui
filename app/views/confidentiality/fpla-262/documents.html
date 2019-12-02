@@ -1,0 +1,265 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+    <a href="#" class="govuk-back-link">Back</a>
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+          <h1 class="govuk-heading-xl">Documents</h1>
+          <br>
+          <h1 class="govuk-heading-xl">#1545-3874-6217-4575</h1>
+
+          <p>You must upload these documents if possible. Give the reason and date you expect to provide it if you don’t have a document yet.</p>
+
+            <form action="check-my-answers" method="post" class="form documents">
+
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h3 class="govuk-fieldset__heading">
+                    1. Social work chronology (Optional)
+                  </h3>
+                </legend>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Upload file (Optional)
+                  </label>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Document status
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort"  >
+                    <option value="published">Attached</option>
+                    <option value="published">Included in social work evidence template (SWET)</option>
+                    <option value="published">To follow</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h3 class="govuk-fieldset__heading">
+                    2. Social work statement and genogram (Optional)
+                  </h3>
+                </legend>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Upload file (Optional)
+                  </label>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Document status
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort"  >
+                    <option value="published">Attached</option>
+                    <option value="published">Included in social work evidence template (SWET)</option>
+                    <option value="published">To follow</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h3 class="govuk-fieldset__heading">
+                    3. Social work assessment (Optional)
+                  </h3>
+                </legend>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Upload file (Optional)
+                  </label>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Document status
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort"  >
+                    <option value="published">Attached</option>
+                    <option value="published">Included in social work evidence template (SWET)</option>
+                    <option value="published">To follow</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h3 class="govuk-fieldset__heading">
+                    4. Care plan (Optional)
+                  </h3>
+                </legend>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Upload file (Optional)
+                  </label>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Document status
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort"  >
+                    <option value="published">Attached</option>
+                    <option value="published">Included in social work evidence template (SWET)</option>
+                    <option value="published">To follow</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h3 class="govuk-fieldset__heading">
+                    5. Social work evidence template (SWET) (Optional)
+                  </h3>
+                </legend>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Upload file (Optional)
+                  </label>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Document status
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort"  >
+                    <option value="published">Attached</option>
+                    <option value="published">To follow</option>
+                  </select>
+                </div>
+
+              </fieldset>
+
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h3 class="govuk-fieldset__heading">
+                    6. Threshold document (Optional)
+                  </h3>
+                </legend>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Upload file (Optional)
+                  </label>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Document status
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort"  >
+                    <option value="published">Attached</option>
+                    <option value="published">Included in social work evidence template (SWET)</option>
+                    <option value="published">To follow</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                  <h3 class="govuk-fieldset__heading">
+                    7. Checklist document (Optional)
+                  </h3>
+                </legend>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Upload file (Optional)
+                  </label>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Document status
+                  </label>
+                  <select class="govuk-select" id="sort" name="sort"  >
+                    <option value="published">Attached</option>
+                    <option value="published">Included in social work evidence template (SWET)</option>
+                    <option value="published">To follow</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <div class="govuk-inset-text">
+                <h3 class="govuk-heading-m">Additional documents (Optional)</h3>
+                <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingOne()" />
+
+                <div id="welcomeDiv"  style="display:none;" class="answer_list" >
+
+                  <h4 class="govuk-heading-s inline-block">Additional documents</h4>
+                  <input type="button" class="govuk-button govuk-button--secondary float-right" name="answer" value="Remove" onclick="hideHearingOne()" />
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-20">
+                      Document name
+                    </label>
+                    <input class="govuk-input govuk-input--width-40" id="width-40" name="hearing-venue" type="text">
+                  </div>
+
+                  <div class="govuk-form-group">
+                    <label class="govuk-label" for="width-10">
+                      Upload a file
+                    </label>
+                    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                  </div>
+
+                  <input type="button" class="govuk-button" name="answer" value="Add new" onclick="showHearingTwo()" />
+
+                </div>
+
+                <br>
+
+              </div>
+
+              <hr>
+
+              <br>
+
+              <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
+              <button class="govuk-button">Continue</button>
+
+              <p><a href="">Cancel</a></p>
+
+              </form>
+
+
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

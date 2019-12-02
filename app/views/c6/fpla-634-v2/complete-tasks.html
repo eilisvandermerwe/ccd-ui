@@ -1,0 +1,108 @@
+
+{% extends "layout-admin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Create notice of proceedings</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <form method="post" class="form">
+
+              <h3 class="govuk-heading-m">Create notice of proceedings</h3>
+
+
+              <!-- <table class="govuk-table ccd-table">
+                <caption class="govuk-table__caption ccd-table-head">Case management hearing on the 15 September 2019</caption>
+
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell table-header">Pre-hearing attendance</td>
+                    <td class="govuk-table__cell">1:30pm</td>
+                  </tr>
+                </tbody>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell table-header">Time of hearing</td>
+                    <td class="govuk-table__cell">2:30pm</td>
+                  </tr>
+                </tbody>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell table-header">Venue</td>
+                    <td class="govuk-table__cell">Family Court Swansea</td>
+                  </tr>
+                </tbody>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell table-header">Judge</td>
+                    <td class="govuk-table__cell">HHJ Malcolm Sharpe </td>
+                  </tr>
+                </tbody>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell table-header">Hearing needs booked</td>
+                    <td class="govuk-table__cell">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                  </tr>
+                </tbody>
+              </table> -->
+
+              <p>The case management hearing will be on the 15 September 2019.</p>
+              
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                  <label class="govuk-label" for="contact-by-email">
+                    What would you like to create?
+                  </label>
+                  <div class="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste">
+                        Notice of proceedings for parties (c6)
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                        Notice of proceedings for non parties (c6a)
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+
+
+
+              <button class="govuk-button govuk-button--secondary" disabled="disabled" aria-disabled="true">Previous</button>
+              <a href="ccd-buffer" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+              <p><a href="">Cancel</a></p>
+
+            </form>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,55 @@
+
+
+{% extends "layout.html" %}
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<div class="ccd-container">
+  <div class="govuk-width-container">
+
+      <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+
+          <div class="govuk-grid-column-one-half">
+
+
+              <h1 class="govuk-heading-xl">Correct an order under the slip rule</h1>
+              <br>
+              <h3 class="govuk-heading-m">#1545-3874-6217-4575</h3>
+
+              <p>This order is sealed.</p>
+
+              <p>You can only make minor edits. For example, you can correct typos that matter to the case, like someone’s name.</p>
+
+              <div class="govuk-inset-text">
+                To change the order, you need to make a C21 application. This includes changing, adding or removing a direction.
+              </div>
+
+
+              <label class="govuk-label" for="serve-application-give-details">
+                Give details of the correction
+              </label>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+              <label class="govuk-label" for="file-upload-1">
+              <div class="govuk-form-group">
+
+            <button class="govuk-button govuk-button--secondary" aria-disabled="true">Previous</button>
+            <a href="judges-name" class="govuk-button" style="font-size: 19px !important;">Continue</a>
+
+            <p><a href="">Cancel</a></p>
+
+            </div>
+
+          </div>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+{% endblock %}

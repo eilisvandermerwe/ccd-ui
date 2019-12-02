@@ -1,0 +1,350 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// Import GOV.UK Frontend
+@import "node_modules/govuk-frontend/all";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+//HMCTS front-end
+@import "node_modules/@hmcts/frontend/all";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.float-right {
+  float:right;
+}
+
+.govuk-button--secondary {
+  background-color: #f3f2f1 !important;
+  box-shadow: 0 2px 0 #929191 !important;
+  color: #0b0c0c !important;
+}
+
+// Full width
+
+.ccd-container {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 64% !important;
+  .govuk-hint {
+    font-size: 16px;
+  }
+}
+
+.govuk-width-container {
+  max-width: none !important;
+  margin: 0 10px !important;
+}
+
+// .govuk-header__container {
+//   border-bottom: 10px solid #005ea5 !important;
+// }
+
+// CCD header
+
+.ccd-header {
+  .govuk-header__logotype-text {
+    padding-left: 10px !important;
+  }
+  .govuk-header__link {
+    margin-bottom: 0px !important;
+  }
+  border-bottom: none !important;
+  .govuk-header__container {
+    .ccd-top-banner {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      width: 60%;
+    }
+    .govuk-header__logo {
+      padding-right: 0px !important;
+    }
+    .govuk-header__logotype-text {
+      font-size: 30px !important;
+    }
+    .govuk-header__link--service-name {
+      font-size: 24px !important;
+    }
+    span {
+      float: right !important;
+      font-weight: bold !important;
+      .govuk-header__link {
+        font-size: 16px !important;
+        padding-left: 10px !important;
+      }
+    }
+  }
+}
+
+.ccd-blue-banner {
+  width: 60%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: #005ea5 !important;
+  height: 55px !important;
+  padding: 0 15px 0 15px !important;
+  p {
+    text-align: right;
+    padding-top: 15px !important;
+    a:link {
+      color: white !important;
+      font-size: 18px !important;
+      text-decoration: none;
+    }
+    /* visited link */
+    a:visited {
+      color: white !important;
+      font-size: 18px !important;
+      text-decoration: none;
+    }
+    /* mouse over link */
+    a:hover {
+      color: white !important;
+      font-size: 18px !important;
+      text-decoration: underline;
+    }
+    /* selected link */
+    a:active {
+      color: white !important;
+      font-size: 18px !important;
+    }
+  }
+}
+
+.header-admin {
+  .govuk-phase-banner {
+    width: 100% !important;
+    p {
+      padding-left: 25px !important;
+    }
+  }
+  .govuk-header__content {
+    width: 100% !important;
+    span {
+      text-align: right !important;
+      float: right !important;
+      padding-top: 5px !important;
+      padding-right: 10px !important;
+    }
+    .govuk-header__link--service-name {
+      padding-bottom: 10px !important;
+    }
+  }
+  .ccd-blue-banner{
+    width: 100% !important;
+    padding: 0px !important;
+    p{
+      padding-right: 30px !important;
+    }
+    nav {
+      padding-left: 25px !important;
+      padding-top: 15px !important;
+      a {
+      font-weight: lighter !important;
+      font-size: 18px !important;
+      }
+      .right-aligned {
+        float: right !important;
+        padding-right: 15px !important;
+      }
+    }
+  }
+}
+
+.govuk-phase-banner {
+  width: 60%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+
+.govuk-select {
+  width: 250px !important;
+  // height: 31px !important;
+  border-radius: 3px !important;
+  background-color: white !important;
+}
+
+
+// CCD tables
+
+.ccd-table {
+  border: 1px solid #BFC1C3;
+  width: 100% !important;
+  .ccd-table-head {
+    background-color: #DEE0E2;
+    padding: 10px;
+    border: 1px solid #BFC1C3;
+  }
+  th{
+    font-size: 16px !important;
+    padding: 10px;
+    font-weight: normal;
+    width: 450px;
+  }
+  td {
+    padding: 10px;
+  }
+  .table-header {
+    width: 30%;
+  }
+}
+
+th {
+  font-size: 16px !important;
+  padding: 10px;
+  font-weight: normal;
+  width: 450px;
+}
+
+.nested-row {
+  margin: 20px !important;
+  th {
+    background-color: #DEE0E2;
+    width: 600px;
+  }
+}
+
+dd {
+  font-size: 16px !important;
+}
+
+dt {
+  font-size: 16px !important;
+}
+
+.ccd-dropdown {
+  text-align: right;
+  .govuk-label {
+    display: inline;
+    padding-left: 15px;
+  }
+  .govuk-button {
+    position: relative !important;
+    display: inline-block !important;
+  }
+}
+
+// Font size to be set to 16px to align with CCD
+
+a, p, caption, td, li, label, select, textarea, .govuk-inset-text, .govuk-file-upload {
+  font-size: 16px !important;
+}
+
+
+
+.govuk-heading-xl {
+  font-size: 32px !important;
+  margin-bottom: 20px !important;
+}
+
+// CCD tab styles
+
+.govuk-tabs__tab {
+  background-color: #DEE0E2 !important;
+  color: #3374B0 !important;
+}
+
+.govuk-tabs__tab--selected {
+  background-color: white !important;
+  color: black !important;
+}
+
+.govuk-tabs__panel {
+  border: none !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+
+// Documents
+
+.documents {
+  .govuk-file-upload {
+    font-size: 16px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100%;
+  }
+}
+
+// .history-table {
+//   th {
+//   }
+//   .govuk-table__body {
+//     .govuk-table__row {
+//       td {
+//         height: 50px !important;
+//       }
+//   }
+// }
+
+.history-table {
+  .history-row {
+    border-left: 10px solid white;
+  }
+  .active {
+    background: rgba(43, 140, 196, 0.1);
+    border-left: 10px solid #2b8cc4;
+  }
+  .history-row:hover {
+    border-left: 10px solid #2b8cc4;
+    background-color: #f8f8f8;
+  }
+  td {
+    height: 40px;
+    padding-left: 10px;
+  }
+}
+
+.details-table {
+  border: 1px solid #bfc1c3;
+  padding: 10px;
+  td {
+    border: none;
+    height: 50px;
+  }
+}
+
+// #two {
+//   display: none;
+// }
+// #three {
+//   display: none;
+// }
+//
+// .confidential-history-tabs {
+//   #one {
+//     display: none;
+//   }
+//   #two {
+//     display: none;
+//   }
+//   #three {
+//     display: none;
+//   }
+// }
+
+.documents {
+  .govuk-select {
+    width: 100% !important;
+    border-radius: 3px !important;
+    background-color: white !important;
+  }
+}
+
+
+  .inline-block {
+    display:inline-block;
+  }
+  .float-right {
+    float: right;
+
+  }
